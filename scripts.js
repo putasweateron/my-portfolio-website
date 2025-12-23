@@ -1,9 +1,7 @@
+const toggle = document.querySelector('.theme-toggle');
+const root = document.documentElement;
 
-document.addEventListener("DOMContentLoaded", () => {
-    const navToggle = document.querySelector(".nav-toggle");
-    const navLinks = document.querySelector(".nav-links");
-
-    navToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-    });
+toggle.addEventListener('click', () => {
+  const current = root.getAttribute('data-theme');
+  root.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
 });

@@ -1,64 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vincent Parham's Portfolio showcasing Front-End Development and IT Projects.">
-    <link rel="stylesheet" href="styles.css">
-    <title>Vincent Parham Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vincent Parham</title>
+  <meta name="description" content="Vincent Parham — Front-End & IT Portfolio" />
+
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <header>
-        <div class="nav-container">
-            <div class="logo">Vincent Parham</div>
-            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://github.com/putasweateron" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            </ul>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <span class="logo">Vincent Parham</span>
+
+      <nav class="nav">
+        <a href="#work">Work</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/putasweateron" target="_blank">GitHub</a>
+        <button class="theme-toggle" aria-label="Toggle theme">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="frame">
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Vincent Parham</h1>
+      <p class="role">Front-End Development & IT</p>
+
+      <button class="cta pushable">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">View Selected Work</span>
+      </button>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+      <p>
+        I build calm, maintainable interfaces and systems with an editorial
+        approach to structure, clarity, and long-term usability.
+      </p>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="work">
+      <h2>Selected Work</h2>
+
+      <div class="work-item">
+        <div>
+          <h3>Portfolio Website (v2)</h3>
+          <p>Dark-first editorial portfolio built with semantic HTML, CSS, and JS.</p>
         </div>
-    </header>
+        <a href="#">View →</a>
+      </div>
 
-    <main>
-        <section id="about">
-            <h1>About Me</h1>
-            <p>Welcome to my portfolio! Explore my work in front-end development and IT.</p>
-        </section>
-
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <div class="portfolio-section">
-                <a href="front_end_project.html" class="portfolio-item">Front-End Project</a>
-                <a href="it_project.html" class="portfolio-item">IT Project</a>
-            </div>
-        </section>
-
-        <section id="blog">
-            <h2>Blog</h2>
-            <p>Explore my thoughts and insights:</p>
-            <ul>
-                <li><a href="blog_post_1.html">Blog Post 1</a></li>
-                <li><a href="blog_post_2.html">Blog Post 2</a></li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:vincent@example.com">vparham5@gmail.com</a></p>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Vincent Parham</p>
-            <a href="https://github.com/putasweateron" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <p class="privacy-note">This site uses analytics for improvement. Your data is private.</p>
+      <div class="work-item">
+        <div>
+          <h3>File Automation Script</h3>
+          <p>Python & Bash tooling to standardize client file naming and structure.</p>
         </div>
+        <a href="#">View →</a>
+      </div>
+    </section>
+
+    <!-- WRITING -->
+    <section id="writing" class="writing">
+      <h2>Writing</h2>
+
+      <ul>
+        <li><a href="#">Designing a Calm Portfolio</a></li>
+        <li><a href="#">Learning Git Through Real Projects</a></li>
+      </ul>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="footer">
+      <p>© 2025 Vincent Parham</p>
+      <p>
+        <a href="mailto:vparham5@gmail.com">vparham5@gmail.com</a> ·
+        <a href="https://github.com/putasweateron" target="_blank">GitHub</a>
+      </p>
     </footer>
 
-    <script src="script.js"></script>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
